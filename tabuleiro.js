@@ -4,9 +4,13 @@ function criarTabuleiro() {
     let tabuleiro = document.createElement("div")
     tabuleiro.setAttribute("id", "tabuleiro")
 
+    let tab = document.createElement("div")
+    tab.setAttribute("id", "tab")
+    tabuleiro.append(tab)
+
     let container = document.createElement("div")
     container.setAttribute("id", "container")
-    tabuleiro.append(container)
+    tab.append(container)
 
     let lineId = 1
 
